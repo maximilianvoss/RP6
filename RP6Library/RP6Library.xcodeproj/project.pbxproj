@@ -83,12 +83,14 @@
 		95EC71C61A2F41BE0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71C71A2F41C50090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71C81A2F48B60090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71CE1A2F55DF0090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		95727E2F1A2F35F10051FA29 = {
 			isa = PBXGroup;
 			children = (
+				95EC71CE1A2F55DF0090C0F8 /* rp6library.h */,
 				95EC71C81A2F48B60090C0F8 /* Makefile */,
 				95EC71751A2F36C90090C0F8 /* acs */,
 				95EC71821A2F36C90090C0F8 /* core */,
@@ -236,11 +238,12 @@
 /* Begin PBXLegacyTarget section */
 		95727E341A2F35F10051FA29 /* All */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "all -C \"$(PROJECT)\"";
+			buildArgumentsString = all;
 			buildConfigurationList = 95727E441A2F35F10051FA29 /* Build configuration list for PBXLegacyTarget "All" */;
 			buildPhases = (
 			);
 			buildToolPath = make;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = All;
@@ -403,7 +406,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PATH = "$(PATH):$(PROJECT_DIR)";
+				PATH = "$(PATH):$(PROJECTDIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -445,7 +448,7 @@
 					"/usr/local/CrossPack-AVR-20131216/avr/include",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PATH = "$(PATH):$(PROJECT_DIR)";
+				PATH = "$(PATH):$(PROJECTDIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
