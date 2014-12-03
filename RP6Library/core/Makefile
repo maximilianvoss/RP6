@@ -4,7 +4,7 @@ CFLAGS=-Wall -O2 -mmcu=atmega32 -I.. -c
 ARFLAGS=-rcs
 SOURCES=$(wildcard *.c)
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=../build/core.a
+EXECUTABLE=../build/libcore.a
 
 all: clean $(SOURCES) $(EXECUTABLE)
 

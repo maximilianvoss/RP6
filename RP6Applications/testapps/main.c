@@ -20,9 +20,9 @@ int main(void) {
 	//RC5data_t rc5data;
 	//rc5data.data = 12320;
 	
-//	init();
+	init();
 //	//scheduler();
-//	uart();
+	uart();
 	
     //engine();
 	//powermgmt();
@@ -34,9 +34,9 @@ int main(void) {
 //
 //	uart_writeString_P("Test1\n");
 //
-//	while (1) {
-//		writeString_P("Test1\n");
-//	}
+	while (1) {
+		uart_writeString_P("Test1\n");
+}
 	
 	return 0;
 }

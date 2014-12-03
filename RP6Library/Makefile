@@ -6,7 +6,7 @@ CLEAN-DIRS=$(DIRS:%=clean-%)
 LIBS=$(DIRS:%=build/%.a)
 EXECUTABLE=build/rp6library.a
 
-all: $(BUILD-DIRS) $(EXECUTABLE)
+all: $(BUILD-DIRS) 
 $(BUILD-DIRS):
 	$(MAKE) -C $(@:build-%=%)
 
