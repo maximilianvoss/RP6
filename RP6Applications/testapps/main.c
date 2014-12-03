@@ -1,4 +1,5 @@
-//#include <rp6library.h>
+#include<core/core.h>
+#include <uart/uart.h>
 /*
 void IRCOMM_RC5dataReady_DUMMY(RC5data_t *rc5data) {
 		uart_writeString_P("Data: ");

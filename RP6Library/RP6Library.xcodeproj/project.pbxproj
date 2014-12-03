@@ -20,26 +20,15 @@
 		95EC717F1A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
 		95EC71801A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
 		95EC71811A2F36C90090C0F8 /* states.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = states.h; sourceTree = "<group>"; };
-		95EC71831A2F36C90090C0F8 /* acs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acs.c; sourceTree = "<group>"; };
-		95EC71841A2F36C90090C0F8 /* acs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acs.h; sourceTree = "<group>"; };
-		95EC71851A2F36C90090C0F8 /* acsSend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acsSend.c; sourceTree = "<group>"; };
-		95EC71861A2F36C90090C0F8 /* acsSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acsSend.h; sourceTree = "<group>"; };
 		95EC71871A2F36C90090C0F8 /* bumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bumper.c; sourceTree = "<group>"; };
 		95EC71881A2F36C90090C0F8 /* bumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bumper.h; sourceTree = "<group>"; };
 		95EC71891A2F36C90090C0F8 /* buttons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttons.h; sourceTree = "<group>"; };
 		95EC718A1A2F36C90090C0F8 /* initialization.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initialization.c; sourceTree = "<group>"; };
 		95EC718B1A2F36C90090C0F8 /* initialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initialization.h; sourceTree = "<group>"; };
-		95EC718C1A2F36C90090C0F8 /* ircommRecv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommRecv.c; sourceTree = "<group>"; };
-		95EC718D1A2F36C90090C0F8 /* ircommRecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircommRecv.h; sourceTree = "<group>"; };
-		95EC718E1A2F36C90090C0F8 /* ircommSend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommSend.c; sourceTree = "<group>"; };
-		95EC718F1A2F36C90090C0F8 /* ircommSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircommSend.h; sourceTree = "<group>"; };
 		95EC71901A2F36C90090C0F8 /* leds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = leds.c; sourceTree = "<group>"; };
 		95EC71911A2F36C90090C0F8 /* leds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leds.h; sourceTree = "<group>"; };
 		95EC71921A2F36C90090C0F8 /* RP6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RP6.h; sourceTree = "<group>"; };
-		95EC71931A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
-		95EC71941A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
-		95EC71951A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
-		95EC71961A2F36C90090C0F8 /* states.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = states.h; sourceTree = "<group>"; };
+		95EC71931A2F36C90090C0F8 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		95EC71981A2F36C90090C0F8 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		95EC71991A2F36C90090C0F8 /* engine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = engine.c; sourceTree = "<group>"; };
 		95EC719A1A2F36C90090C0F8 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
@@ -71,7 +60,6 @@
 		95EC71B81A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71B91A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
 		95EC71BA1A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
-		95EC71BC1A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71BD1A2F36C90090C0F8 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
 		95EC71BE1A2F36C90090C0F8 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
 		95EC71C01A2F38C60090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
@@ -83,14 +71,12 @@
 		95EC71C61A2F41BE0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71C71A2F41C50090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71C81A2F48B60090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
-		95EC71CE1A2F55DF0090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		95727E2F1A2F35F10051FA29 = {
 			isa = PBXGroup;
 			children = (
-				95EC71CE1A2F55DF0090C0F8 /* rp6library.h */,
 				95EC71C81A2F48B60090C0F8 /* Makefile */,
 				95EC71751A2F36C90090C0F8 /* acs */,
 				95EC71821A2F36C90090C0F8 /* core */,
@@ -126,26 +112,15 @@
 		95EC71821A2F36C90090C0F8 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				95EC71831A2F36C90090C0F8 /* acs.c */,
-				95EC71841A2F36C90090C0F8 /* acs.h */,
-				95EC71851A2F36C90090C0F8 /* acsSend.c */,
-				95EC71861A2F36C90090C0F8 /* acsSend.h */,
 				95EC71871A2F36C90090C0F8 /* bumper.c */,
 				95EC71881A2F36C90090C0F8 /* bumper.h */,
 				95EC71891A2F36C90090C0F8 /* buttons.h */,
 				95EC718A1A2F36C90090C0F8 /* initialization.c */,
 				95EC718B1A2F36C90090C0F8 /* initialization.h */,
-				95EC718C1A2F36C90090C0F8 /* ircommRecv.c */,
-				95EC718D1A2F36C90090C0F8 /* ircommRecv.h */,
-				95EC718E1A2F36C90090C0F8 /* ircommSend.c */,
-				95EC718F1A2F36C90090C0F8 /* ircommSend.h */,
 				95EC71901A2F36C90090C0F8 /* leds.c */,
 				95EC71911A2F36C90090C0F8 /* leds.h */,
 				95EC71921A2F36C90090C0F8 /* RP6.h */,
-				95EC71931A2F36C90090C0F8 /* rp6library.h */,
-				95EC71941A2F36C90090C0F8 /* scheduler.c */,
-				95EC71951A2F36C90090C0F8 /* scheduler.h */,
-				95EC71961A2F36C90090C0F8 /* states.h */,
+				95EC71931A2F36C90090C0F8 /* core.h */,
 				95EC71C11A2F41960090C0F8 /* Makefile */,
 			);
 			path = core;
@@ -225,7 +200,6 @@
 		95EC71BB1A2F36C90090C0F8 /* uart */ = {
 			isa = PBXGroup;
 			children = (
-				95EC71BC1A2F36C90090C0F8 /* rp6library.h */,
 				95EC71BD1A2F36C90090C0F8 /* uart.c */,
 				95EC71BE1A2F36C90090C0F8 /* uart.h */,
 				95EC71C71A2F41C50090C0F8 /* Makefile */,

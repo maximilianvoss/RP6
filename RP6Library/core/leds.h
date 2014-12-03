@@ -1,7 +1,7 @@
 #ifndef __CORE_LEDS_H__
 #define __CORE_LEDS_H__
 
-#include <core/RP6.h>
+#include "RP6.h"
 
 /* LEDs */
 typedef union {

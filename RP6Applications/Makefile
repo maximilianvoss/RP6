@@ -3,11 +3,11 @@ BUILD-DIRS=$(DIRS:%=build-%)
 CLEAN-DIRS=$(DIRS:%=clean-%)
 
 all: $(BUILD-DIRS)
-	$(BUILD-DIRS):
+$(BUILD-DIRS):
 	$(MAKE) -C $(@:build-%=%)
 
 clean: $(CLEAN-DIRS)
-	$(CLEAN-DIRS):
+$(CLEAN-DIRS):
 	$(MAKE) -C $(@:clean-%=%) clean
 
 
