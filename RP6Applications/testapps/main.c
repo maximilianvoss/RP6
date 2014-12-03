@@ -1,4 +1,4 @@
-#include <rp6library.h>
+//#include <rp6library.h>
 /*
 void IRCOMM_RC5dataReady_DUMMY(RC5data_t *rc5data) {
 		uart_writeString_P("Data: ");
@@ -19,22 +19,23 @@ int main(void) {
 	//RC5data_t rc5data;
 	//rc5data.data = 12320;
 	
-	init();
-	scheduler();
-	//uart();
-	engine();
+//	init();
+//	//scheduler();
+//	uart();
+	
+    //engine();
 	//powermgmt();
 
 	//ircomm();
 	//acs();
 	//acs_setRC5DataHandler(IRCOMM_RC5dataReady_DUMMY);
 	//acs_ircomm_send(&rc5data);
-
-	//uart_writeString_P("Test1\n");
-
-	while (1) {
-		//writeString_P("Test1\n");
-	}
+//
+//	uart_writeString_P("Test1\n");
+//
+//	while (1) {
+//		writeString_P("Test1\n");
+//	}
 	
 	return 0;
 }
