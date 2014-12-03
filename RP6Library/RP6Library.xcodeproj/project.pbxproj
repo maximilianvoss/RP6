@@ -6,15 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		95727E3E1A2F35F10051FA29 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 95727E3D1A2F35F10051FA29 /* main.c */; };
-		95727E411A2F35F10051FA29 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 95727E401A2F35F10051FA29 /* Makefile */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		95727E3A1A2F35F10051FA29 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
-		95727E3D1A2F35F10051FA29 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		95727E401A2F35F10051FA29 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		95EC71761A2F36C90090C0F8 /* acs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acs.c; sourceTree = "<group>"; };
 		95EC71771A2F36C90090C0F8 /* acs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acs.h; sourceTree = "<group>"; };
 		95EC71781A2F36C90090C0F8 /* acsSend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acsSend.c; sourceTree = "<group>"; };
@@ -81,6 +74,14 @@
 		95EC71BC1A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71BD1A2F36C90090C0F8 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
 		95EC71BE1A2F36C90090C0F8 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+		95EC71C01A2F38C60090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C11A2F41960090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C21A2F41A10090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C31A2F41A80090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C41A2F41B00090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C51A2F41B70090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C61A2F41BE0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71C71A2F41C50090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -95,7 +96,6 @@
 				95EC71B11A2F36C90090C0F8 /* powermgmt */,
 				95EC71B71A2F36C90090C0F8 /* scheduler */,
 				95EC71BB1A2F36C90090C0F8 /* uart */,
-				95727E3C1A2F35F10051FA29 /* RP6Library */,
 				95727E3B1A2F35F10051FA29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,23 +106,6 @@
 				95727E3A1A2F35F10051FA29 /* Index */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		95727E3C1A2F35F10051FA29 /* RP6Library */ = {
-			isa = PBXGroup;
-			children = (
-				95727E3D1A2F35F10051FA29 /* main.c */,
-				95727E3F1A2F35F10051FA29 /* Makefiles */,
-			);
-			path = RP6Library;
-			sourceTree = "<group>";
-		};
-		95727E3F1A2F35F10051FA29 /* Makefiles */ = {
-			isa = PBXGroup;
-			children = (
-				95727E401A2F35F10051FA29 /* Makefile */,
-			);
-			name = Makefiles;
 			sourceTree = "<group>";
 		};
 		95EC71751A2F36C90090C0F8 /* acs */ = {
@@ -140,6 +123,7 @@
 				95EC717F1A2F36C90090C0F8 /* scheduler.c */,
 				95EC71801A2F36C90090C0F8 /* scheduler.h */,
 				95EC71811A2F36C90090C0F8 /* states.h */,
+				95EC71C01A2F38C60090C0F8 /* Makefile */,
 			);
 			path = acs;
 			sourceTree = "<group>";
@@ -167,6 +151,7 @@
 				95EC71941A2F36C90090C0F8 /* scheduler.c */,
 				95EC71951A2F36C90090C0F8 /* scheduler.h */,
 				95EC71961A2F36C90090C0F8 /* states.h */,
+				95EC71C11A2F41960090C0F8 /* Makefile */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -186,6 +171,7 @@
 				95EC71A11A2F36C90090C0F8 /* scheduler.h */,
 				95EC71A21A2F36C90090C0F8 /* vector.c */,
 				95EC71A31A2F36C90090C0F8 /* vector.h */,
+				95EC71C21A2F41A10090C0F8 /* Makefile */,
 			);
 			path = engine;
 			sourceTree = "<group>";
@@ -200,6 +186,7 @@
 				95EC71A91A2F36C90090C0F8 /* rp6library.h */,
 				95EC71AA1A2F36C90090C0F8 /* send.c */,
 				95EC71AB1A2F36C90090C0F8 /* send.h */,
+				95EC71C31A2F41A80090C0F8 /* Makefile */,
 			);
 			path = ircomm;
 			sourceTree = "<group>";
@@ -211,6 +198,7 @@
 				95EC71AE1A2F36C90090C0F8 /* ircommAcs.h */,
 				95EC71AF1A2F36C90090C0F8 /* rc5data.h */,
 				95EC71B01A2F36C90090C0F8 /* rp6library.h */,
+				95EC71C41A2F41B00090C0F8 /* Makefile */,
 			);
 			path = ircommAcs;
 			sourceTree = "<group>";
@@ -223,6 +211,7 @@
 				95EC71B41A2F36C90090C0F8 /* powermgmt.c */,
 				95EC71B51A2F36C90090C0F8 /* powermgmt.h */,
 				95EC71B61A2F36C90090C0F8 /* rp6library.h */,
+				95EC71C51A2F41B70090C0F8 /* Makefile */,
 			);
 			path = powermgmt;
 			sourceTree = "<group>";
@@ -233,6 +222,7 @@
 				95EC71B81A2F36C90090C0F8 /* rp6library.h */,
 				95EC71B91A2F36C90090C0F8 /* scheduler.c */,
 				95EC71BA1A2F36C90090C0F8 /* scheduler.h */,
+				95EC71C61A2F41BE0090C0F8 /* Makefile */,
 			);
 			path = scheduler;
 			sourceTree = "<group>";
@@ -243,6 +233,7 @@
 				95EC71BC1A2F36C90090C0F8 /* rp6library.h */,
 				95EC71BD1A2F36C90090C0F8 /* uart.c */,
 				95EC71BE1A2F36C90090C0F8 /* uart.h */,
+				95EC71C71A2F41C50090C0F8 /* Makefile */,
 			);
 			path = uart;
 			sourceTree = "<group>";
@@ -372,8 +363,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95727E411A2F35F10051FA29 /* Makefile in Sources */,
-				95727E3E1A2F35F10051FA29 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

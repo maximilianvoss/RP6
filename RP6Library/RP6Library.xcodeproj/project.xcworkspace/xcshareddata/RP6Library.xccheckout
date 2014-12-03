@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB3BAD83-1F7C-4D52-B35F-D12AFD16E6D4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RP6Library</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D8E5F8BCD566AE9B6DE85D87A75B44A78B82BEBF</key>
+		<string>vmware:RP6</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RP6Library/RP6Library.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D8E5F8BCD566AE9B6DE85D87A75B44A78B82BEBF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>vmware:RP6</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D8E5F8BCD566AE9B6DE85D87A75B44A78B82BEBF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D8E5F8BCD566AE9B6DE85D87A75B44A78B82BEBF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RP6</string>
+		</dict>
+	</array>
+</dict>
+</plist>
