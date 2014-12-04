@@ -2,10 +2,10 @@
 #include <core/RP6.h>
 #include <core/buttons.h>
 
-void init() {
-	cli();
+void init(void) {
+    portInit();
 	
-	portInit();
+    cli();
 	
 	IRCOMM_OFF();
 	
@@ -33,7 +33,7 @@ void init() {
  * void initTimers()
  * initializing all timer functionalities for stopwatches, delays and whatever 
  */
-void initTimers() {
+void initTimers(void) {
 	/* Initialize Timer1 - PWM: PWM, phase correct with ICR1 as top value. */
 	TCCR1A = (0 << WGM10) | (1 << WGM11) | (1 << COM1A1) | (1 << COM1B1);
 	TCCR1B =  (1 << WGM13) | (0 << WGM12) | (1 << CS10);

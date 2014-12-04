@@ -1,4 +1,4 @@
-#include <engine/engine.h>
+#include "engine.h"
 #include <scheduler/scheduler.h>
 
 static engine_position_vector_t cur_vec_left;
@@ -8,7 +8,7 @@ static engine_position_vector_t dest_vec_right;
 static uint16_t cur_angle;
 static uint16_t dest_angle;
 
-void engine() {
+void engine(void) {
 	engine_setHWDist(0,0);
 	engine_scheduler();
 	
@@ -22,7 +22,7 @@ void engine() {
 }
 
 
-void updatePosition() {
+void updatePosition(void) {
 	if ( cur_angle != dest_angle ) {
 	}
 }

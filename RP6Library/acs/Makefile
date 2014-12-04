@@ -1,10 +1,10 @@
 CC=/usr/local/bin/avr-gcc
 AR=/usr/local/bin/avr-ar
-CFLAGS=-Wall -O2 -mmcu=atmega32 -I.. -c
+CFLAGS=-c -mmcu=atmega32 -I.. -gdwarf-2 -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -std=gnu99
 ARFLAGS=-rcs
 SOURCES=$(wildcard *.c)
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=../build/acs.a
+EXECUTABLE=../build/libacs.a
 
 all: clean $(SOURCES) $(EXECUTABLE)
 

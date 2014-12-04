@@ -16,7 +16,7 @@
 typedef struct scheduler_s {
 	uint16_t cur_time; 			/* current counter, counts from 0 to exe_time */
 	uint16_t exe_time;			/* when to execute the function, maximum value of cur_time */
-	void (*func) ();			/* the function which has to be executed after exe_time has been reached */
+	void (*func) (void);			/* the function which has to be executed after exe_time has been reached */
 	struct scheduler_s *next;  /* a pointer to the next timerevent structure */
 } scheduler_t;
 
@@ -24,7 +24,7 @@ typedef struct scheduler_s {
 static uint16_t volatile timer;
 static uint8_t volatile sleeper;
 
-void scheduler();
+void scheduler(void);
 void scheduler_regEvent(scheduler_t *inEvent, uint8_t type);
 void scheduler_unregEvent(scheduler_t *inEvent, uint8_t type);
 void scheduler_execEvents(scheduler_t *inEvent);

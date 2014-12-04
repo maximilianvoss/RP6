@@ -1,8 +1,8 @@
-#include <acs/acs.h>
+#include "acs.h"
 
 scheduler_t schedAcsSched;
 
-void acs() {
+void acs(void) {
 	acs_scheduler_init();
 	
 	/* set up task to send data */

@@ -1,4 +1,4 @@
-#include <ircomm/recv.h>
+#include "recv.h"
 
 #define RC5_TIME 		1.778e-3
 #define RC5_PULSE_MIN	(uint8_t)(10e3 * RC5_TIME * 0.4 + 0.5)
@@ -12,7 +12,7 @@ static uint8_t rc5_data_received;
 /**
  * Task to receive IRCOMM transmissions
  **/
-void ircomm_schedulerReceive() {
+void ircomm_schedulerReceive(void) {
 	static uint8_t IRCOMM_RC5_bit;
 	static uint8_t IRCOMM_RC5_time;
 	static uint16_t IRCOMM_RC5_tmp;

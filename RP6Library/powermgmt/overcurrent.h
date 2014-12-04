@@ -3,9 +3,9 @@
 
 #include <core/RP6.h>
 #include <scheduler/scheduler.h>
-#include <powermgmt/powermgmt.h>
+#include "powermgmt.h"
 
-void powermgmt_overcurrent();
-void powermgmt_schedulerOvercurrent();
+void powermgmt_overcurrent(void);
+void powermgmt_schedulerOvercurrent(void);
 
 #endif

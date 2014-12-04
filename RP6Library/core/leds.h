@@ -24,8 +24,8 @@ typedef union {
 } LEDs_t;
 
 
-void leds();
-void updateLEDs();
+void leds(void);
+void updateLEDs(void);
 void inline setLEDs(uint8_t leds);
 
 #endif

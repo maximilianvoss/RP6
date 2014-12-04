@@ -4,8 +4,8 @@
 #include <ircommAcs/rc5data.h>
 #include <ircommAcs/ircommAcs.h>
 
-void acs_ircomm_schedulerSend();
-void acs_ircomm_timer();
+void acs_ircomm_schedulerSend(void);
+void acs_ircomm_timer(void);
 void acs_ircomm_send(RC5data_t *rc5data);
 
 #endif

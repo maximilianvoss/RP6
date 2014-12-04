@@ -7,7 +7,7 @@ static volatile uint16_t ircomm_data_to_send;
 /** 
  * task to send IRCOMM data only
  **/
-void ircomm_schedulerSend() {
+void ircomm_schedulerSend(void) {
 	if (ircomm_transmission) {
 		ircommAcs_startTimer();
 	} else {
@@ -28,7 +28,7 @@ void ircomm_send(RC5data_t *rc5data) {
 /**
  * interrupt timer function to do the actual IRCOMM transmission
  **/
-void ircomm_timer() {
+void ircomm_timer(void) {
 	static uint8_t ircomm_pulse;
 	
 	if ( ircomm_pulse ) {

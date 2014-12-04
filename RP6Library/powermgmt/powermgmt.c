@@ -1,11 +1,11 @@
-#include <powermgmt/powermgmt.h>
+#include "powermgmt.h"
 
 static powermgmt_ADCStates_t ADCStates;
 static uint8_t current_adc_channel;
 scheduler_t schedPowerMgmt;
 
 
-void powermgmt() {	
+void powermgmt(void) {
 	ADMUX = 0; 
 	ADCSRA = (0<<ADIE) | (0<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADIF);
 	SFIOR = 0;
@@ -21,22 +21,22 @@ void powermgmt() {
 }
 
 
-powermgmt_ADCStates_t *powermgmt_getADCStates() {
+powermgmt_ADCStates_t *powermgmt_getADCStates(void) {
 	return &ADCStates;
 }
 
-void inline powermgmt_schedulerPowerMgmt() {
+void powermgmt_schedulerPowerMgmt(void) {
 	powermgmt_updateADCStates ();
 }
 
 
-void inline powermgmt_setADCChannel(uint8_t channel) {
+void powermgmt_setADCChannel(uint8_t channel) {
 	ADMUX = (1<<REFS0) | (0<<REFS1) | (channel<<MUX0);
 	ADCSRA = (0<<ADIE) | (1<<ADSC) | (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADIF);
 }
 
 
-void powermgmt_updateADCStates() {
+void powermgmt_updateADCStates(void) {
 	if( !( ADCSRA & (1<<ADSC) ) ) {
 		switch(current_adc_channel) {
 				case 0: ADCStates.adcBat = ADC; powermgmt_setADCChannel(ADC_MCURRENT_L); break;

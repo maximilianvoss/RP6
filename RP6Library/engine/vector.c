@@ -1,7 +1,7 @@
-#include <engine/vector.h>
+#include "vector.h"
 #include <math.h>
 
-void inline init_vector(engine_position_vector_t *vec) {
+void init_vector(engine_position_vector_t *vec) {
 	vec->x_m = 0;
 	vec->x_mm = 0;
 	vec->y_m = 0;
@@ -52,14 +52,14 @@ engine_position_vector_t diff_vector(engine_position_vector_t *src, engine_posit
 
 
 uint16_t calc_dest_angle(uint16_t inAngle, engine_position_vector_t *src, engine_position_vector_t *dest) {
-	float x;
-	float y;
-	float angle;
+//	float x;
+//	float y;
+//	float angle;
 	
-	x = (dest->x_m + dest->x_mm) - (src->x_m + src->x_mm);
-	y = (dest->y_m + dest->y_mm) - (src->y_m + src->y_mm);
+//	x = (dest->x_m + dest->x_mm) - (src->x_m + src->x_mm);
+//	y = (dest->y_m + dest->y_mm) - (src->y_m + src->y_mm);
 	
-	angle = atan2(y, x);
+//	angle = atan2(y, x);
 	
 	return 0;
 }

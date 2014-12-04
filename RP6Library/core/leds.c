@@ -7,7 +7,7 @@ static LEDs_t statusLEDs;
  * void initLEDs()
  * sets all LEDs to off
  */
-void leds() {
+void leds(void) {
 	setLEDs(0);
 }
 
@@ -16,7 +16,7 @@ void leds() {
  * void updateStatusLEDs()
  * the LEDs are switched according to the struct statusLEDs
  */
-void updateLEDs() {
+void updateLEDs(void) {
 	DDRB &= ~0x83;
 	PORTB &= ~0x83;
 	if(statusLEDs.LED4){ DDRB |= SL4; PORTB |= SL4; }
@@ -34,7 +34,7 @@ void updateLEDs() {
  * a setting the LEDs state 
  * @IN: uint8_t leds: how the LEDs should be switched, have a look at t_LEDs
  */
-void inline setLEDs(uint8_t leds) {
+void setLEDs(uint8_t leds) {
 	statusLEDs.byte = leds;
 	updateLEDs();
 }

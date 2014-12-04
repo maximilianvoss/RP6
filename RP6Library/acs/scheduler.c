@@ -1,10 +1,10 @@
-#include <acs/scheduler.h>
+#include "scheduler.h"
 #include <scheduler/scheduler.h>
 
 scheduler_t schedAcsRecv;
 scheduler_t schedAcsSend;
 
-void acs_scheduler_init() {
+void acs_scheduler_init(void) {
 	/* set interrupt handly for receiving IRCOMM data - none needed. */
 	ircommAcs_setInterrupt(acs_interrupt);
 	
@@ -30,12 +30,12 @@ void acs_scheduler_init() {
 }
 
 
-void acs_scheduler() {
+void acs_scheduler(void) {
 	acs_prepareState();
 }
 
 
-void inline acs_prepareState() {
+void acs_prepareState(void) {
 	switch ( acs_state ) {
 		case IRCOMM_IDLE:
 		break;

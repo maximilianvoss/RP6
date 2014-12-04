@@ -3,10 +3,10 @@
 
 #include <ircommAcs/rc5data.h>
 #include <core/RP6.h>
-#include <acs/states.h>
+#include "states.h"
 
-void acs_schedulerReceive();
+void acs_schedulerReceive(void);
 void acs_setRC5DataHandler( void (*rc5Handler)(RC5data_t *rc5data ));
-void acs_interrupt();
+void acs_interrupt(void);
 
 #endif

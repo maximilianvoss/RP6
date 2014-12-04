@@ -1,4 +1,4 @@
-#include <ircomm/ircomm.h>
+#include "ircomm.h"
 
 scheduler_t schedIrcommRecv;
 scheduler_t schedIrcommSend;
@@ -6,7 +6,7 @@ scheduler_t schedIrcommSend;
 /**
  * Initial function to use IRCOMM service only
  **/
-void ircomm() {
+void ircomm(void) {
 	/* set interrupt handly for receiving IRCOMM data - none needed. */
 	ircommAcs_setInterrupt(NULL);
 	

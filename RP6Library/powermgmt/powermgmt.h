@@ -3,7 +3,7 @@
 
 #include <core/RP6.h>
 #include <scheduler/scheduler.h>
-#include <powermgmt/overcurrent.h>
+#include "overcurrent.h"
 
 /* ADC states */
 typedef struct ADCStates_s {
@@ -16,10 +16,10 @@ typedef struct ADCStates_s {
 	uint16_t adc1;
 } powermgmt_ADCStates_t;
 
-void powermgmt();
-powermgmt_ADCStates_t *powermgmt_getADCStates();
-void inline powermgmt_schedulerPowerMgmt();
-void inline powermgmt_setADCChannel(uint8_t channel);
-void powermgmt_updateADCStates();
+void powermgmt(void);
+powermgmt_ADCStates_t *powermgmt_getADCStates(void);
+void powermgmt_schedulerPowerMgmt(void);
+void powermgmt_setADCChannel(uint8_t channel);
+void powermgmt_updateADCStates(void);
 
 #endif

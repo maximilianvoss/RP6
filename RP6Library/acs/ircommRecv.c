@@ -1,4 +1,4 @@
-#include <acs/ircommRecv.h>
+#include "ircommRecv.h"
 #include <uart/uart.h>
 
 #define RC5_TIME 		1.778e-3
@@ -14,7 +14,7 @@ static volatile uint8_t acs_count;
 /**
  * Task to receive IRCOMM transmissions
  **/
-void acs_schedulerReceive() {
+void acs_schedulerReceive(void) {
 	static uint8_t IRCOMM_RC5_bit;
 	static uint8_t IRCOMM_RC5_time;
 	static uint16_t IRCOMM_RC5_tmp;
@@ -67,7 +67,7 @@ void acs_schedulerReceive() {
 }
 
 
-void acs_interrupt() {
+void acs_interrupt(void) {
 	if ( acs_state == ACS_STATE_WAIT_LEFT || acs_state == ACS_STATE_WAIT_RIGHT ) {
 		if ( ! detect_rc5 && !(PINB & ACS) ) {
 			acs_count++;

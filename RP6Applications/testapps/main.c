@@ -21,8 +21,14 @@ int main(void) {
 	//rc5data.data = 12320;
 	
 	init();
+//    leds();
+//    updateLEDs();
+
+    
 //	//scheduler();
 	uart();
+    
+
 	
     //engine();
 	//powermgmt();
@@ -32,7 +38,7 @@ int main(void) {
 	//acs_setRC5DataHandler(IRCOMM_RC5dataReady_DUMMY);
 	//acs_ircomm_send(&rc5data);
 //
-//	uart_writeString_P("Test1\n");
+	uart_writeString_P("TestString\n");
 //
 	while (1) {
 		uart_writeString_P("Test1\n");

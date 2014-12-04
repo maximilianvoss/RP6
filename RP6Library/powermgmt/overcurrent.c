@@ -1,9 +1,9 @@
-#include <powermgmt/overcurrent.h>
+#include "overcurrent.h"
 
 scheduler_t schedOvercurrent;
 static powermgmt_ADCStates_t *ADCStates;
 
-void powermgmt_overcurrent() {
+void powermgmt_overcurrent(void) {
 	schedOvercurrent.cur_time = 0;
 	schedOvercurrent.exe_time = 1;
 	schedOvercurrent.func = *powermgmt_schedulerOvercurrent;
@@ -16,7 +16,7 @@ void powermgmt_overcurrent() {
 /**
  * task to identify overcurrents in the engine 
  **/
-void powermgmt_schedulerOvercurrent() {
+void powermgmt_schedulerOvercurrent(void) {
 	if ( ADCStates->adcMotorCurrentLeft > 770 || ADCStates->adcMotorCurrentRight > 770 ) {
 		cli();
 		OCR1AL = 0;

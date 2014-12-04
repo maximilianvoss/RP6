@@ -3,12 +3,12 @@
 
 #include <core/RP6.h>
 
-#include <ircomm/recv.h>
-#include <ircomm/send.h>
+#include "recv.h"
+#include "send.h"
 
 #include <ircommAcs/ircommAcs.h>
 #include <scheduler/scheduler.h>
 
-void ircomm();
+void ircomm(void);
 
 #endif

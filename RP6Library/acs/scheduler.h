@@ -4,14 +4,14 @@
 #include <core/RP6.h>
 #include <ircommAcs/rc5data.h>
 #include <ircommAcs/ircommAcs.h>
-#include <acs/ircommRecv.h>
-#include <acs/ircommSend.h>
-#include <acs/acsSend.h>
+#include "ircommRecv.h"
+#include "ircommSend.h"
+#include "acsSend.h"
 #include <scheduler/scheduler.h>
-#include <acs/states.h>
+#include "states.h"
 
-void acs_scheduler_init();
-void acs_scheduler();
-void inline acs_prepareState();
+void acs_scheduler_init(void);
+void acs_scheduler(void);
+void acs_prepareState(void);
 
 #endif

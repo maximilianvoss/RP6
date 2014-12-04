@@ -1,42 +1,42 @@
-#include <engine/hardware.h>
+#include "hardware.h"
 
 static uint16_t dist_left;
 static uint16_t dist_right;
 
 
 /* Set distance for left and right */
-void inline engine_setHWDist(uint16_t inDist_left, uint16_t inDist_right ) {
+void engine_setHWDist(uint16_t inDist_left, uint16_t inDist_right ) {
 	dist_left = inDist_left;
 	dist_right = inDist_right;
 }
 
 
 /* set distance for left */
-void inline engine_setHWDistLeft(uint16_t inDist_left) {
+void engine_setHWDistLeft(uint16_t inDist_left) {
 	dist_left = inDist_left;
 }
 
 
 /* set distance for right */
-void inline engine_setHWDistRight(uint16_t inDist_right) {
+void engine_setHWDistRight(uint16_t inDist_right) {
 	dist_right = inDist_right;
 }
 
 
 /* get distance left */
-uint16_t inline engine_getHWDistLeft() {
+uint16_t engine_getHWDistLeft(void) {
 	return dist_left;
 }
 
 
 /* get distance right */
-uint16_t inline engine_getHWDistRight() {
+uint16_t engine_getHWDistRight(void) {
 	return dist_right;
 }
 
 
 /* set engine directions left and right */
-void inline engine_setHWDirection(uint8_t dir_left, uint8_t dir_right) {
+void engine_setHWDirection(uint8_t dir_left, uint8_t dir_right) {
 	if(dir_left)
 		PORTC |= DIR_L;
 	else
@@ -50,14 +50,14 @@ void inline engine_setHWDirection(uint8_t dir_left, uint8_t dir_right) {
 
 
 /* set engine power left and right */
-void inline engine_setHWPower(uint8_t power_left, uint8_t power_right) {
+void engine_setHWPower(uint8_t power_left, uint8_t power_right) {
 	engine_setHWPowerLeft(power_left);
 	engine_setHWPowerRight(power_right);
 }
 
 
 /* set engine power left */
-void inline engine_setHWPowerLeft(uint8_t power_left) {
+void engine_setHWPowerLeft(uint8_t power_left) {
 	if(power_left > 210) {
 		power_left = 210;
 	}
@@ -66,7 +66,7 @@ void inline engine_setHWPowerLeft(uint8_t power_left) {
 
 
 /* set engine power right */
-void inline engine_setHWPowerRight(uint8_t power_right) {
+void engine_setHWPowerRight(uint8_t power_right) {
 	if(power_right > 210) {
 		power_right = 210;	
 	}

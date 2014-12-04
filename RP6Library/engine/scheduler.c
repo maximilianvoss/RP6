@@ -1,4 +1,4 @@
-#include <engine/scheduler.h>
+#include "scheduler.h"
 #include <scheduler/scheduler.h>
 
 scheduler_t schedEngineSched;
@@ -7,7 +7,7 @@ uint8_t dest_pwr_right;
 uint8_t curr_pwr_left;
 uint8_t curr_pwr_right;
 
-void engine_scheduler() {
+void engine_scheduler(void) {
 	curr_pwr_left = 0;
 	curr_pwr_right = 0;
 	dest_pwr_left = 0;
@@ -20,7 +20,7 @@ void engine_scheduler() {
 }
 
 
-void inline engine_stop() {
+void engine_stop(void) {
 	engine_setHWPower(0,0);
 	curr_pwr_left = 0;
 	curr_pwr_right = 0;
@@ -29,7 +29,7 @@ void inline engine_stop() {
 }
 
 
-void inline engine_setDestEnginePower(uint8_t inDest_pwr_left, uint8_t inDest_pwr_right) {
+void engine_setDestEnginePower(uint8_t inDest_pwr_left, uint8_t inDest_pwr_right) {
 	dest_pwr_left = inDest_pwr_left;
 	dest_pwr_right = inDest_pwr_right;
 }

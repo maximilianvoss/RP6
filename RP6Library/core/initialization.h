@@ -11,7 +11,7 @@ DDRB = INIT_DDRB;	\
 DDRC = INIT_DDRC;	\
 DDRD = INIT_DDRD;
 
-void init();
-void initTimers();
+void init(void);
+void initTimers(void);
 
 #endif

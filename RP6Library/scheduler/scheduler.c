@@ -1,4 +1,4 @@
-#include <scheduler/scheduler.h>
+#include "scheduler.h"
 
 /* declaration */
 scheduler_t *events01 = NULL;
@@ -12,7 +12,7 @@ scheduler_t *events1000 = NULL;
  * void scheduler()
  * initializing all timer functionalities for stopwatches, delays and whatever 
  */
-void scheduler() {
+void scheduler(void) {
 	timer = 0;
 	
 	/* Initialize Timer 0 -  100µs cycle for Delays/Stopwatches, RC5 reception etc.: */

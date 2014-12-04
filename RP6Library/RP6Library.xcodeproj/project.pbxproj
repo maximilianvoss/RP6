@@ -16,7 +16,6 @@
 		95EC717B1A2F36C90090C0F8 /* ircommRecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircommRecv.h; sourceTree = "<group>"; };
 		95EC717C1A2F36C90090C0F8 /* ircommSend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommSend.c; sourceTree = "<group>"; };
 		95EC717D1A2F36C90090C0F8 /* ircommSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircommSend.h; sourceTree = "<group>"; };
-		95EC717E1A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC717F1A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
 		95EC71801A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
 		95EC71811A2F36C90090C0F8 /* states.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = states.h; sourceTree = "<group>"; };
@@ -36,7 +35,6 @@
 		95EC719C1A2F36C90090C0F8 /* hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardware.h; sourceTree = "<group>"; };
 		95EC719D1A2F36C90090C0F8 /* rotation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rotation.c; sourceTree = "<group>"; };
 		95EC719E1A2F36C90090C0F8 /* rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotation.h; sourceTree = "<group>"; };
-		95EC719F1A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71A01A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
 		95EC71A11A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
 		95EC71A21A2F36C90090C0F8 /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vector.c; sourceTree = "<group>"; };
@@ -45,19 +43,15 @@
 		95EC71A61A2F36C90090C0F8 /* ircomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircomm.h; sourceTree = "<group>"; };
 		95EC71A71A2F36C90090C0F8 /* recv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recv.c; sourceTree = "<group>"; };
 		95EC71A81A2F36C90090C0F8 /* recv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recv.h; sourceTree = "<group>"; };
-		95EC71A91A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71AA1A2F36C90090C0F8 /* send.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send.c; sourceTree = "<group>"; };
 		95EC71AB1A2F36C90090C0F8 /* send.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send.h; sourceTree = "<group>"; };
 		95EC71AD1A2F36C90090C0F8 /* ircommAcs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommAcs.c; sourceTree = "<group>"; };
 		95EC71AE1A2F36C90090C0F8 /* ircommAcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ircommAcs.h; sourceTree = "<group>"; };
 		95EC71AF1A2F36C90090C0F8 /* rc5data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc5data.h; sourceTree = "<group>"; };
-		95EC71B01A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71B21A2F36C90090C0F8 /* overcurrent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = overcurrent.c; sourceTree = "<group>"; };
 		95EC71B31A2F36C90090C0F8 /* overcurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overcurrent.h; sourceTree = "<group>"; };
 		95EC71B41A2F36C90090C0F8 /* powermgmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = powermgmt.c; sourceTree = "<group>"; };
 		95EC71B51A2F36C90090C0F8 /* powermgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = powermgmt.h; sourceTree = "<group>"; };
-		95EC71B61A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
-		95EC71B81A2F36C90090C0F8 /* rp6library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rp6library.h; sourceTree = "<group>"; };
 		95EC71B91A2F36C90090C0F8 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
 		95EC71BA1A2F36C90090C0F8 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
 		95EC71BD1A2F36C90090C0F8 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
@@ -100,7 +94,6 @@
 				95EC717B1A2F36C90090C0F8 /* ircommRecv.h */,
 				95EC717C1A2F36C90090C0F8 /* ircommSend.c */,
 				95EC717D1A2F36C90090C0F8 /* ircommSend.h */,
-				95EC717E1A2F36C90090C0F8 /* rp6library.h */,
 				95EC717F1A2F36C90090C0F8 /* scheduler.c */,
 				95EC71801A2F36C90090C0F8 /* scheduler.h */,
 				95EC71811A2F36C90090C0F8 /* states.h */,
@@ -136,7 +129,6 @@
 				95EC719C1A2F36C90090C0F8 /* hardware.h */,
 				95EC719D1A2F36C90090C0F8 /* rotation.c */,
 				95EC719E1A2F36C90090C0F8 /* rotation.h */,
-				95EC719F1A2F36C90090C0F8 /* rp6library.h */,
 				95EC71A01A2F36C90090C0F8 /* scheduler.c */,
 				95EC71A11A2F36C90090C0F8 /* scheduler.h */,
 				95EC71A21A2F36C90090C0F8 /* vector.c */,
@@ -153,7 +145,6 @@
 				95EC71A61A2F36C90090C0F8 /* ircomm.h */,
 				95EC71A71A2F36C90090C0F8 /* recv.c */,
 				95EC71A81A2F36C90090C0F8 /* recv.h */,
-				95EC71A91A2F36C90090C0F8 /* rp6library.h */,
 				95EC71AA1A2F36C90090C0F8 /* send.c */,
 				95EC71AB1A2F36C90090C0F8 /* send.h */,
 				95EC71C31A2F41A80090C0F8 /* Makefile */,
@@ -167,7 +158,6 @@
 				95EC71AD1A2F36C90090C0F8 /* ircommAcs.c */,
 				95EC71AE1A2F36C90090C0F8 /* ircommAcs.h */,
 				95EC71AF1A2F36C90090C0F8 /* rc5data.h */,
-				95EC71B01A2F36C90090C0F8 /* rp6library.h */,
 				95EC71C41A2F41B00090C0F8 /* Makefile */,
 			);
 			path = ircommAcs;
@@ -180,7 +170,6 @@
 				95EC71B31A2F36C90090C0F8 /* overcurrent.h */,
 				95EC71B41A2F36C90090C0F8 /* powermgmt.c */,
 				95EC71B51A2F36C90090C0F8 /* powermgmt.h */,
-				95EC71B61A2F36C90090C0F8 /* rp6library.h */,
 				95EC71C51A2F41B70090C0F8 /* Makefile */,
 			);
 			path = powermgmt;
@@ -189,7 +178,6 @@
 		95EC71B71A2F36C90090C0F8 /* scheduler */ = {
 			isa = PBXGroup;
 			children = (
-				95EC71B81A2F36C90090C0F8 /* rp6library.h */,
 				95EC71B91A2F36C90090C0F8 /* scheduler.c */,
 				95EC71BA1A2F36C90090C0F8 /* scheduler.h */,
 				95EC71C61A2F41BE0090C0F8 /* Makefile */,

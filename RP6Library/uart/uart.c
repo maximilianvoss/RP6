@@ -11,7 +11,7 @@
  * void uart()
  * initializing UART
  */
-void uart() {
+void uart(void) {
 	UBRRH = UBRR_BAUD_LOW >> 8;
 	UBRRL = (uint8_t) UBRR_BAUD_LOW;
 	UCSRA = 0x00;
