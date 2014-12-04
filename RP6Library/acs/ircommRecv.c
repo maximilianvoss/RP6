@@ -60,11 +60,7 @@ void acs_schedulerReceive(void) {
 		}
 		data.data = 0;
 		rc5_data_received = 0;
-	}
-	if ( acs_count > 5 ) {
-		uart_writeString_P("blubb\n");
-	}
-}
+	}}
 
 
 void acs_interrupt(void) {

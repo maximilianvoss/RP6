@@ -6,11 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		95EC72011A30A6110090C0F8 /* ircommTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71F91A30A6110090C0F8 /* ircommTest.c */; };
+		95EC72021A30A6110090C0F8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FA1A30A6110090C0F8 /* Makefile */; };
+		95EC72031A30A6110090C0F8 /* ledTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FC1A30A6110090C0F8 /* ledTest.c */; };
+		95EC72041A30A6110090C0F8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FD1A30A6110090C0F8 /* Makefile */; };
+		95EC72051A30A6110090C0F8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FF1A30A6110090C0F8 /* Makefile */; };
+		95EC72061A30A6110090C0F8 /* uartTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 95EC72001A30A6110090C0F8 /* uartTest.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		95727E5E1A2F36040051FA29 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Index; path = /Users/voss/Documents/Private/RP6/RP6/RP6Applications/build/Debug/Index; sourceTree = "<absolute>"; };
-		95EC71CA1A2F50D60090C0F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		95EC71CB1A2F510F0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71CC1A2F517F0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71F91A30A6110090C0F8 /* ircommTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommTest.c; sourceTree = "<group>"; };
+		95EC71FA1A30A6110090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71FC1A30A6110090C0F8 /* ledTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ledTest.c; sourceTree = "<group>"; };
+		95EC71FD1A30A6110090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC71FF1A30A6110090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95EC72001A30A6110090C0F8 /* uartTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uartTest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -25,10 +39,39 @@
 		95EC71C91A2F50D60090C0F8 /* testapps */ = {
 			isa = PBXGroup;
 			children = (
-				95EC71CA1A2F50D60090C0F8 /* main.c */,
+				95EC71F81A30A6110090C0F8 /* ircomm */,
+				95EC71FB1A30A6110090C0F8 /* led */,
+				95EC71FE1A30A6110090C0F8 /* uart */,
 				95EC71CC1A2F517F0090C0F8 /* Makefile */,
 			);
 			path = testapps;
+			sourceTree = "<group>";
+		};
+		95EC71F81A30A6110090C0F8 /* ircomm */ = {
+			isa = PBXGroup;
+			children = (
+				95EC71F91A30A6110090C0F8 /* ircommTest.c */,
+				95EC71FA1A30A6110090C0F8 /* Makefile */,
+			);
+			path = ircomm;
+			sourceTree = "<group>";
+		};
+		95EC71FB1A30A6110090C0F8 /* led */ = {
+			isa = PBXGroup;
+			children = (
+				95EC71FC1A30A6110090C0F8 /* ledTest.c */,
+				95EC71FD1A30A6110090C0F8 /* Makefile */,
+			);
+			path = led;
+			sourceTree = "<group>";
+		};
+		95EC71FE1A30A6110090C0F8 /* uart */ = {
+			isa = PBXGroup;
+			children = (
+				95EC71FF1A30A6110090C0F8 /* Makefile */,
+				95EC72001A30A6110090C0F8 /* uartTest.c */,
+			);
+			path = uart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EC72051A30A6110090C0F8 /* Makefile in Sources */,
+				95EC72021A30A6110090C0F8 /* Makefile in Sources */,
+				95EC72011A30A6110090C0F8 /* ircommTest.c in Sources */,
+				95EC72041A30A6110090C0F8 /* Makefile in Sources */,
+				95EC72031A30A6110090C0F8 /* ledTest.c in Sources */,
+				95EC72061A30A6110090C0F8 /* uartTest.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

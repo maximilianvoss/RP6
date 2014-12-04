@@ -1,29 +1,15 @@
-CC=/usr/local/bin/avr-gcc
-OBJCOPY=/usr/local/bin/avr-objcopy
-CFLAGS=-c -mmcu=atmega32 -I../../RP6Library -gdwarf-2 -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -std=gnu99
-LDFLAGS=-L../../RP6Library/build -luart -lcore
-ALLFLAGS=-mmcu=atmega32 -I../../RP6Library -gdwarf-2 -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -std=gnu99
-OBJFLAGS=-O ihex -R .eeprom
-SOURCES=$(wildcard *.c)
-OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLES=$(SOURCES:.c=.elf)
-HEXFILES=$(SOURCES:.c=.hex)
+DIRS=ircomm led uart
+BUILD-DIRS=$(DIRS:%=build-%)
+CLEAN-DIRS=$(DIRS:%=clean-%)
 
-all: clean $(SOURCES) $(EXECUTABLES) $(HEXFILES)
+all: $(BUILD-DIRS)
+$(BUILD-DIRS):
+	$(MAKE) -C $(@:build-%=%)
 
-$(HEXFILES): $(EXECUTABLES)
-	$(OBJCOPY) $(OBJFLAGS) $(EXECUTABLES) $@
-	scp $@ voss@vmware:~/data/
-
-$(EXECUTABLES): $(OBJECTS)
-	$(CC) $(ALLFLAGS) $< --output $@ $(LDFLAGS)
+clean: $(CLEAN-DIRS)
+$(CLEAN-DIRS):
+	$(MAKE) -C $(@:clean-%=%) clean
 
 
-$(OBJECTS): $(SOURCES)
-	$(CC) $(CFLAGS) $< -o $@
-
-clean:
-	rm -f $(EXECUTABLES)
-	rm -f $(OBJECTS)
-	rm -f $(HEXFILES)
-
+.PHONY: subdirs $(BUILD-DIRS)
+.PHONY: clean all
