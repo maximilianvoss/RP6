@@ -16,7 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95727E5E1A2F36040051FA29 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Index; path = /Users/voss/Documents/Private/RP6/RP6/RP6Applications/build/Debug/Index; sourceTree = "<absolute>"; };
+		95E324EA1A35FF3900FC2A61 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E324F21A36284700FC2A61 /* engineTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = engineTest.c; sourceTree = "<group>"; };
+		95E324F31A36284700FC2A61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		95EC71CB1A2F510F0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71CC1A2F517F0090C0F8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
 		95EC71F91A30A6110090C0F8 /* ircommTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ircommTest.c; sourceTree = "<group>"; };
@@ -33,12 +35,23 @@
 			children = (
 				95EC71CB1A2F510F0090C0F8 /* Makefile */,
 				95EC71C91A2F50D60090C0F8 /* testapps */,
+				95E324EA1A35FF3900FC2A61 /* Index */,
 			);
+			sourceTree = "<group>";
+		};
+		95E324F11A36284700FC2A61 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				95E324F21A36284700FC2A61 /* engineTest.c */,
+				95E324F31A36284700FC2A61 /* Makefile */,
+			);
+			path = engine;
 			sourceTree = "<group>";
 		};
 		95EC71C91A2F50D60090C0F8 /* testapps */ = {
 			isa = PBXGroup;
 			children = (
+				95E324F11A36284700FC2A61 /* engine */,
 				95EC71F81A30A6110090C0F8 /* ircomm */,
 				95EC71FB1A30A6110090C0F8 /* led */,
 				95EC71FE1A30A6110090C0F8 /* uart */,
@@ -145,7 +158,7 @@
 			);
 			name = Index;
 			productName = Index;
-			productReference = 95727E5E1A2F36040051FA29 /* Index */;
+			productReference = 95E324EA1A35FF3900FC2A61 /* Index */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */

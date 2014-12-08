@@ -3,7 +3,7 @@
 
 #include "RP6.h"
 
-uint8_t inline isBumperLeft(void);
-uint8_t inline isBumperRight(void);
+uint8_t isBumperLeft(void);
+uint8_t isBumperRight(void);
 
 #endif

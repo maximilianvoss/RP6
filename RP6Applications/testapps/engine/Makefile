@@ -1,7 +1,7 @@
 CC=/usr/local/bin/avr-gcc
 OBJCOPY=/usr/local/bin/avr-objcopy
 CFLAGS=-c -mmcu=atmega32 -I../../../RP6Library -gdwarf-2 -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -std=gnu99
-LDFLAGS=-L../../../RP6Library/build -lcore -lscheduler
+LDFLAGS=-L../../../RP6Library/build -luart -lcore -lscheduler -lengine -lpowermgmt
 ALLFLAGS=-mmcu=atmega32 -I../../../RP6Library -gdwarf-2 -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -std=gnu99
 OBJFLAGS=-O ihex -R .eeprom
 SOURCES=$(wildcard *.c)

@@ -1,4 +1,5 @@
 #include "recv.h"
+#include<uart/uart.h>
 
 #define RC5_TIME 		1.778e-3
 #define RC5_PULSE_MIN	(uint8_t)(10e3 * RC5_TIME * 0.4 + 0.5)
@@ -20,6 +21,8 @@ void ircomm_schedulerReceive(void) {
 	uint16_t tmp;
 	
 	if ( ( !rc5_data_received ) ) {
+        uart_writeString_P("Huhu");
+
 		tmp = IRCOMM_RC5_tmp;
 		
 		if ( ++IRCOMM_RC5_time > RC5_PULSE_MAX ) {
@@ -50,6 +53,8 @@ void ircomm_schedulerReceive(void) {
 		IRCOMM_RC5_tmp = tmp;	
 	}
 	if ( rc5_data_received ) {
+        uart_writeString_P("RC5 Data");
+
 		if (ircomm_RC5DataHandler != NULL ) {
 			ircomm_RC5DataHandler(&data);
 		}
