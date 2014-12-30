@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952717F21A4989AE00AFE700 /* testPowerOn.c in Sources */ = {isa = PBXBuildFile; fileRef = 952717F01A4989AE00AFE700 /* testPowerOn.c */; };
+		952717F51A4989BF00AFE700 /* testLEDs.c in Sources */ = {isa = PBXBuildFile; fileRef = 952717F31A4989BF00AFE700 /* testLEDs.c */; };
+		952717F81A4989CF00AFE700 /* testVoltageSensor.c in Sources */ = {isa = PBXBuildFile; fileRef = 952717F61A4989CF00AFE700 /* testVoltageSensor.c */; };
+		952717FC1A49949000AFE700 /* testBumpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 952717FA1A49949000AFE700 /* testBumpers.c */; };
+		952717FF1A49949C00AFE700 /* testLightSensors.c in Sources */ = {isa = PBXBuildFile; fileRef = 952717FD1A49949C00AFE700 /* testLightSensors.c */; };
+		952718021A4994A800AFE700 /* testACS.c in Sources */ = {isa = PBXBuildFile; fileRef = 952718001A4994A800AFE700 /* testACS.c */; };
+		952718051A4994B300AFE700 /* testRC5.c in Sources */ = {isa = PBXBuildFile; fileRef = 952718031A4994B300AFE700 /* testRC5.c */; };
 		95EC72011A30A6110090C0F8 /* ircommTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71F91A30A6110090C0F8 /* ircommTest.c */; };
 		95EC72021A30A6110090C0F8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FA1A30A6110090C0F8 /* Makefile */; };
 		95EC72031A30A6110090C0F8 /* ledTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 95EC71FC1A30A6110090C0F8 /* ledTest.c */; };
@@ -16,6 +23,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		952717F01A4989AE00AFE700 /* testPowerOn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testPowerOn.c; sourceTree = "<group>"; };
+		952717F11A4989AE00AFE700 /* testPowerOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testPowerOn.h; sourceTree = "<group>"; };
+		952717F31A4989BF00AFE700 /* testLEDs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testLEDs.c; sourceTree = "<group>"; };
+		952717F41A4989BF00AFE700 /* testLEDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testLEDs.h; sourceTree = "<group>"; };
+		952717F61A4989CF00AFE700 /* testVoltageSensor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testVoltageSensor.c; sourceTree = "<group>"; };
+		952717F71A4989CF00AFE700 /* testVoltageSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVoltageSensor.h; sourceTree = "<group>"; };
+		952717F91A4989E000AFE700 /* selftest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selftest.h; sourceTree = "<group>"; };
+		952717FA1A49949000AFE700 /* testBumpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testBumpers.c; sourceTree = "<group>"; };
+		952717FB1A49949000AFE700 /* testBumpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testBumpers.h; sourceTree = "<group>"; };
+		952717FD1A49949C00AFE700 /* testLightSensors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testLightSensors.c; sourceTree = "<group>"; };
+		952717FE1A49949C00AFE700 /* testLightSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testLightSensors.h; sourceTree = "<group>"; };
+		952718001A4994A800AFE700 /* testACS.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testACS.c; sourceTree = "<group>"; };
+		952718011A4994A800AFE700 /* testACS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testACS.h; sourceTree = "<group>"; };
+		952718031A4994B300AFE700 /* testRC5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testRC5.c; sourceTree = "<group>"; };
+		952718041A4994B300AFE700 /* testRC5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testRC5.h; sourceTree = "<group>"; };
+		95DF77A51A45B47500A9FC2D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		95DF77A61A45B47500A9FC2D /* selftest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selftest.c; sourceTree = "<group>"; usesTabs = 1; };
 		95E324EA1A35FF3900FC2A61 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E324F21A36284700FC2A61 /* engineTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = engineTest.c; sourceTree = "<group>"; };
 		95E324F31A36284700FC2A61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -33,10 +57,35 @@
 		95727E531A2F36040051FA29 = {
 			isa = PBXGroup;
 			children = (
+				95DF77A41A45B47500A9FC2D /* selftest */,
 				95EC71CB1A2F510F0090C0F8 /* Makefile */,
 				95EC71C91A2F50D60090C0F8 /* testapps */,
 				95E324EA1A35FF3900FC2A61 /* Index */,
 			);
+			sourceTree = "<group>";
+		};
+		95DF77A41A45B47500A9FC2D /* selftest */ = {
+			isa = PBXGroup;
+			children = (
+				95DF77A51A45B47500A9FC2D /* Makefile */,
+				95DF77A61A45B47500A9FC2D /* selftest.c */,
+				952717F31A4989BF00AFE700 /* testLEDs.c */,
+				952717F41A4989BF00AFE700 /* testLEDs.h */,
+				952717F01A4989AE00AFE700 /* testPowerOn.c */,
+				952717F11A4989AE00AFE700 /* testPowerOn.h */,
+				952717F61A4989CF00AFE700 /* testVoltageSensor.c */,
+				952717F71A4989CF00AFE700 /* testVoltageSensor.h */,
+				952717F91A4989E000AFE700 /* selftest.h */,
+				952717FA1A49949000AFE700 /* testBumpers.c */,
+				952717FB1A49949000AFE700 /* testBumpers.h */,
+				952717FD1A49949C00AFE700 /* testLightSensors.c */,
+				952717FE1A49949C00AFE700 /* testLightSensors.h */,
+				952718001A4994A800AFE700 /* testACS.c */,
+				952718011A4994A800AFE700 /* testACS.h */,
+				952718031A4994B300AFE700 /* testRC5.c */,
+				952718041A4994B300AFE700 /* testRC5.h */,
+			);
+			path = selftest;
 			sourceTree = "<group>";
 		};
 		95E324F11A36284700FC2A61 /* engine */ = {
@@ -213,9 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952717F21A4989AE00AFE700 /* testPowerOn.c in Sources */,
+				952717F81A4989CF00AFE700 /* testVoltageSensor.c in Sources */,
+				952718051A4994B300AFE700 /* testRC5.c in Sources */,
+				952717FC1A49949000AFE700 /* testBumpers.c in Sources */,
 				95EC72051A30A6110090C0F8 /* Makefile in Sources */,
 				95EC72021A30A6110090C0F8 /* Makefile in Sources */,
+				952718021A4994A800AFE700 /* testACS.c in Sources */,
+				952717F51A4989BF00AFE700 /* testLEDs.c in Sources */,
 				95EC72011A30A6110090C0F8 /* ircommTest.c in Sources */,
+				952717FF1A49949C00AFE700 /* testLightSensors.c in Sources */,
 				95EC72041A30A6110090C0F8 /* Makefile in Sources */,
 				95EC72031A30A6110090C0F8 /* ledTest.c in Sources */,
 				95EC72061A30A6110090C0F8 /* uartTest.c in Sources */,

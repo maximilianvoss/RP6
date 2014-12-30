@@ -3,13 +3,13 @@
 scheduler_t schedOvercurrent;
 static powermgmt_ADCStates_t *ADCStates;
 
-void powermgmt_overcurrent(void) {
+void powermgmt_overcurrent(powermgmt_ADCStates_t *ADCStatesIn) {
 	schedOvercurrent.cur_time = 0;
 	schedOvercurrent.exe_time = 1;
 	schedOvercurrent.func = *powermgmt_schedulerOvercurrent;
 	scheduler_regEvent(&schedOvercurrent, EVENT_10);
 	
-	ADCStates = powermgmt_getADCStates();
+    ADCStates = ADCStatesIn;
 }
 
 

@@ -29,6 +29,11 @@ void updateLEDs(void) {
 }
 
 
+LEDs_t* getStatusLEDs(void) {
+    return &statusLEDs;
+}
+
+
 /**
  * void inline setLEDs(uint8_t leds) 
  * a setting the LEDs state 
@@ -37,4 +42,12 @@ void updateLEDs(void) {
 void setLEDs(uint8_t leds) {
 	statusLEDs.byte = leds;
 	updateLEDs();
+}
+
+void ledPowerOn(void){
+    PORTB |= PWRON;
+}
+
+void ledPowerOff(void){
+    PORTB &= ~PWRON;
 }

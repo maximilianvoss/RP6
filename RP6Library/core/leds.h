@@ -23,9 +23,11 @@ typedef union {
 	};
 } LEDs_t;
 
-
 void leds(void);
 void updateLEDs(void);
 void setLEDs(uint8_t leds);
+void ledPowerOn(void);
+void ledPowerOff(void);
+LEDs_t* getStatusLEDs(void);
 
 #endif

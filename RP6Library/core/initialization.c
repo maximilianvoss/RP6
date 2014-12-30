@@ -1,6 +1,7 @@
 #include <core/initialization.h>
 #include <core/RP6.h>
 #include <core/buttons.h>
+#include "leds.h"
 
 void init(void) {
     portInit();
@@ -10,7 +11,7 @@ void init(void) {
 	IRCOMM_OFF();
 	
 	/* power on */
-	PORTB |= PWRON;
+    ledPowerOn();
 	enableResetButton();
 	
 		// Initialize ADC:
@@ -49,9 +50,8 @@ void initTimers(void) {
 		 ATTENTION: Max PWM value is 210 and NOT 255 !!!*/
 
 	/* init Timer2 for ACS */
-	#ifdef COMPILE_ENABLE_IRCOMM
-		TCCR2 = (1 << WGM21) | (0 << COM20) | (1 << CS20);
-		/* 0x6E = 72kHz @8MHz */
-		OCR2  = 0x6E; 
-	#endif
+    TCCR2 = (1 << WGM21) | (0 << COM20) | (1 << CS20);
+    
+    /* 0x6E = 72kHz @8MHz */
+    OCR2  = 0x6E;
 }

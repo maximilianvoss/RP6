@@ -20,6 +20,8 @@ void scheduler(void) {
 			| (0 << COM00) | (0 << COM01) 
 			| (0 << CS02)  | (1 << CS01) | (0 << CS00);
 	OCR0  = 99;
+    
+    sleepInit();
 }
 
 

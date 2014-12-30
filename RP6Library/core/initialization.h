@@ -1,6 +1,8 @@
 #ifndef __CORE_INITIALIZATION_H__
 #define __CORE_INITIALIZATION_H__
 
+#include "RP6.h"
+
 #define portInit();	\
 PORTA = INIT_PRTA;	\
 PORTB = INIT_PRTB;	\

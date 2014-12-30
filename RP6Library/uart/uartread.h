@@ -10,9 +10,9 @@ extern volatile uint8_t uart_status;
 #define UART_BUFFER_OK 0
 #define UART_BUFFER_OVERFLOW 1
 
-char readChar(void);
-uint8_t readChars(char *buf, uint8_t numberOfChars);
-uint8_t getBufferLength(void);
-void clearReceptionBuffer(void);
+char uart_readChar(void);
+uint8_t uart_readChars(char *buf, uint8_t numberOfChars);
+uint8_t uart_getBufferLength(void);
+void uart_clearReceptionBuffer(void);
 
 #endif

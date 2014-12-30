@@ -17,7 +17,7 @@ void powermgmt(void) {
 	schedPowerMgmt.func = *powermgmt_schedulerPowerMgmt;
 	scheduler_regEvent(&schedPowerMgmt, EVENT_1);
 	
-	powermgmt_overcurrent();
+	powermgmt_overcurrent(&ADCStates);
 }
 
 

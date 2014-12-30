@@ -3,9 +3,9 @@
 
 #include <core/RP6.h>
 #include <scheduler/scheduler.h>
-#include "powermgmt.h"
+#include "types.h"
 
-void powermgmt_overcurrent(void);
+void powermgmt_overcurrent(powermgmt_ADCStates_t *ADCStatesIn);
 void powermgmt_schedulerOvercurrent(void);
 
 #endif

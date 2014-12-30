@@ -2,6 +2,7 @@
 #include <uart/uart.h>
 #include <scheduler/scheduler.h>
 #include <engine/engine.h>
+#include <powermgmt/powermgmt.h>
 
 scheduler_t sched_uart;
 
@@ -15,6 +16,7 @@ int main(void) {
     scheduler();
 	uart();
     engine();
+    powermgmt();
     
     
     sched_uart.cur_time = 0;

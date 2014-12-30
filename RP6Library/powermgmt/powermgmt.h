@@ -4,17 +4,7 @@
 #include <core/RP6.h>
 #include <scheduler/scheduler.h>
 #include "overcurrent.h"
-
-/* ADC states */
-typedef struct ADCStates_s {
-	uint16_t adcBat;
-	uint16_t adcMotorCurrentLeft;
-	uint16_t adcMotorCurrentRight;
-	uint16_t adcLSL;
-	uint16_t adcLSR;
-	uint16_t adc0;
-	uint16_t adc1;
-} powermgmt_ADCStates_t;
+#include "types.h"
 
 void powermgmt(void);
 powermgmt_ADCStates_t *powermgmt_getADCStates(void);

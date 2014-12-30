@@ -4,6 +4,7 @@
 #include <avr/io.h>	
 #include <avr/interrupt.h>
 #include <stdlib.h>
+#include "sleep.h"
 
 /* chain definitions */
 #define EVENT_01 0 		/* 0.1 microseconds */
@@ -14,7 +15,7 @@
 
 /* timerevent structure */
 typedef struct scheduler_s {
-	uint16_t cur_time; 			/* current counter, counts from 0 to exe_time */
+	volatile uint16_t cur_time; 			/* current counter, counts from 0 to exe_time */
 	uint16_t exe_time;			/* when to execute the function, maximum value of cur_time */
 	void (*func) (void);			/* the function which has to be executed after exe_time has been reached */
 	struct scheduler_s *next;  /* a pointer to the next timerevent structure */
@@ -22,7 +23,6 @@ typedef struct scheduler_s {
 
 /* a counter from 0 to 1000 */
 static uint16_t volatile timer;
-static uint8_t volatile sleeper;
 
 void scheduler(void);
 void scheduler_regEvent(scheduler_t *inEvent, uint8_t type);

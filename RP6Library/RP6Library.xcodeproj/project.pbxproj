@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95DF77AA1A45C2AF00A9FC2D /* sleep.c in Sources */ = {isa = PBXBuildFile; fileRef = 95DF77A81A45C2AF00A9FC2D /* sleep.c */; };
 		95E324ED1A36052700FC2A61 /* uartread.c in Sources */ = {isa = PBXBuildFile; fileRef = 95E324EB1A36052700FC2A61 /* uartread.c */; };
 		95E324F01A36056700FC2A61 /* uartwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 95E324EE1A36056700FC2A61 /* uartwrite.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95DF77A71A45BA7400A9FC2D /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		95DF77A81A45C2AF00A9FC2D /* sleep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sleep.c; sourceTree = "<group>"; };
+		95DF77A91A45C2AF00A9FC2D /* sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sleep.h; sourceTree = "<group>"; };
 		95E324E81A35FC0B00FC2A61 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E324EB1A36052700FC2A61 /* uartread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uartread.c; sourceTree = "<group>"; };
 		95E324EC1A36052700FC2A61 /* uartread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uartread.h; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				95EC71B41A2F36C90090C0F8 /* powermgmt.c */,
 				95EC71B51A2F36C90090C0F8 /* powermgmt.h */,
 				95EC71C51A2F41B70090C0F8 /* Makefile */,
+				95DF77A71A45BA7400A9FC2D /* types.h */,
 			);
 			path = powermgmt;
 			sourceTree = "<group>";
@@ -191,6 +196,8 @@
 				95EC71B91A2F36C90090C0F8 /* scheduler.c */,
 				95EC71BA1A2F36C90090C0F8 /* scheduler.h */,
 				95EC71C61A2F41BE0090C0F8 /* Makefile */,
+				95DF77A81A45C2AF00A9FC2D /* sleep.c */,
+				95DF77A91A45C2AF00A9FC2D /* sleep.h */,
 			);
 			path = scheduler;
 			sourceTree = "<group>";
@@ -335,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DF77AA1A45C2AF00A9FC2D /* sleep.c in Sources */,
 				95E324ED1A36052700FC2A61 /* uartread.c in Sources */,
 				95E324F01A36056700FC2A61 /* uartwrite.c in Sources */,
 			);

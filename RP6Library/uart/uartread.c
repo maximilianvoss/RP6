@@ -54,7 +54,7 @@ ISR(USART_RXC_vect)
  * // [...]
  *
  */
-char readChar(void)
+char uart_readChar(void)
 {
     uart_status = UART_BUFFER_OK;
     if(((uint8_t)(write_size - read_size)) > 0) {
@@ -72,7 +72,7 @@ char readChar(void)
  * It also returns the number of characters really copied to the buffer!
  * Just in case that there were fewer chars in the buffer...
  */
-uint8_t readChars(char *buf, uint8_t numberOfChars)
+uint8_t uart_readChars(char *buf, uint8_t numberOfChars)
 {
     uint8_t i = 0;
     uart_status = UART_BUFFER_OK;
@@ -91,7 +91,7 @@ uint8_t readChars(char *buf, uint8_t numberOfChars)
  * Example:
  * s. readChar function above!
  */
-uint8_t getBufferLength(void)
+uint8_t uart_getBufferLength(void)
 {
     return (((uint8_t)(write_size - read_size)));
 }
@@ -100,7 +100,7 @@ uint8_t getBufferLength(void)
  * Clears the reception buffer - it disables UART Receive
  * interrupt for a short period of time.
  */
-void clearReceptionBuffer(void)
+void uart_clearReceptionBuffer(void)
 {
     static uint8_t dummy;
     UCSRB &= ~(1 << RXCIE); // disable UART RX Interrupt
